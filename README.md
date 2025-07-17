@@ -13,3 +13,8 @@ Goal
 Stretch to parent's width
 Fix
 Use align-self: stretch; or set parent’s width */
+
+
+
+
+The card wrapper need overflow hidden in order to see the border radius applied.

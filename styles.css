@@ -1,20 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+* {
+    border: 1px solid;
+}
+    */
+
+button {
+    all: unset;
+}
+
+:root {
+    /* Primary */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    /* Neutral */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+
 main {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--cream);
 }
 
 .card-wrapper {
     width: 600px;
     height: 460px;
     display: flex;
-    background-color: rgb(237, 100, 66);
+    border-radius: 8px;
+    overflow: hidden;
+
+    /* background-color: red; */
 }
 
 .left-container {
     width: 50%;
-    background-color: blue;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .right-container {
@@ -24,19 +59,57 @@ main {
     align-items: center;
     justify-content: center;
     padding: 32px;
-    background-color: red;
+    gap: 32px;
+    background-color: var(--white);
 }
 
 .overline {
     height: 14px;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--grey);
 }
 
 .title {
     height: 96px;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: var(--black);
 }
 
 .description {
     height: 88px;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--grey);
+}
+
+.price {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--green-500);
+}
+
+.price-crossed {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 120%;
+    color: var(--grey);
+    text-decoration: line-through;
 }
 
 .button {
@@ -45,18 +118,30 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--white);
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 8px;
 }
 
 .right-container-top-group {
     width: 236px;
     height: 246px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .right-container-bottom-group {
-    display: flex;
-    flex-direction: row;
     width: 236px;
     height: 32px;
-    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
 }
