@@ -1,4 +1,4 @@
-# fm-newbie-product-preview-card
+# fm-newbie-order-summary-component
 
 ## CSS boilerplate
 
@@ -90,4 +90,18 @@ div {
 - `background-size: conver;` Makes sure the image covers the whole div, cropping if necessary.
 - `background-position: center;` Centers the image.
 - `background-repeat: no-repeat:` Prevents tiling.
+
+## margin-left: auto; use case explained
+
+- Given a flex container with its children laid out in a row by default, inside we can apply:
+      - `margin-left:auto;` tells the browser to take up all the remaining horizontal space to the left.
+      - In other words, pushes the children to the far right.
+
+```
+.summary-card__plan-link {
+    margin-left: auto;
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+```
 
