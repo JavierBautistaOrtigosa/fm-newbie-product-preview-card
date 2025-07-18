@@ -6,15 +6,9 @@
     box-sizing: border-box;
 }
 
-/* Debugging Borders */
-/*
-* {
-    border: 1px solid;
-}
-*/
-
 button {
     all: unset;
+    outline: revert;
 }
 
 :root {

@@ -1,5 +1,31 @@
 # fm-newbie-product-preview-card
 
+## CSS boilerplate
+
+```
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    all: unset;
+    outline: revert;
+}
+
+:root {
+    /* Primary */
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    /* Neutral */
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+```
+
 ## The width property when value is auto
 
 -   Why `width: auto;` doesn't stretch?
@@ -65,5 +91,3 @@ div {
 - `background-position: center;` Centers the image.
 - `background-repeat: no-repeat:` Prevents tiling.
 
-
-https://gist.github.com/MoOx/9137295?permalink_comment_id=4525068#gistcomment-4525068
