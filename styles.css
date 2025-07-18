@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Debugging Borders */
 /*
 * {
     border: 1px solid;
 }
-    */
+*/
 
 button {
     all: unset;
@@ -34,17 +36,15 @@ main {
     background-color: var(--cream);
 }
 
-.card-wrapper {
+.product-card {
     width: 600px;
     height: 460px;
     display: flex;
     border-radius: 8px;
     overflow: hidden;
-
-    /* background-color: red; */
 }
 
-.left-container {
+.product-card__image {
     width: 50%;
     background-image: url(/images/image-product-desktop.jpg);
     background-size: cover;
@@ -52,7 +52,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.right-container {
+.product-card__details {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -63,7 +63,7 @@ main {
     background-color: var(--white);
 }
 
-.overline {
+.product-card__overline {
     height: 14px;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ main {
     color: var(--grey);
 }
 
-.title {
+.product-card__title {
     height: 96px;
     font-family: Fraunces;
     font-weight: 700;
@@ -86,16 +86,25 @@ main {
     color: var(--black);
 }
 
-.description {
+.product-card__description {
     height: 88px;
     font-family: Montserrat;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 14px;
     line-height: 160%;
     color: var(--grey);
 }
 
-.price {
+.product-card__prices {
+    width: 236px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.product-card__price {
     font-family: Fraunces;
     font-weight: 700;
     font-size: 32px;
@@ -103,7 +112,7 @@ main {
     color: var(--green-500);
 }
 
-.price-crossed {
+.product-card__price--old {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 13px;
@@ -112,7 +121,7 @@ main {
     text-decoration: line-through;
 }
 
-.button {
+.product-card__button {
     height: 50px;
     width: 236px;
     display: flex;
@@ -129,19 +138,10 @@ main {
     border-radius: 8px;
 }
 
-.right-container-top-group {
+.product-card__header {
     width: 236px;
     height: 246px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.right-container-bottom-group {
-    width: 236px;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
 }
